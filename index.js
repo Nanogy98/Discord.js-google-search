@@ -17,7 +17,6 @@ client.once("ready", async () => {
   console.log("set");
 });
 
-
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) {
     return;
