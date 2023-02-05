@@ -1,3 +1,23 @@
+client.once("ready", async () => {
+  const data = [
+    {
+      name: "search",
+      description: "Google検索",
+      options: [
+        {
+          type: "STRING",
+          name: "word",
+          description: "入力してください",
+          required: true,
+        },
+      ],
+    }
+  ];
+  await client.application.commands.set(data);
+  console.log("set");
+});
+
+
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) {
     return;
