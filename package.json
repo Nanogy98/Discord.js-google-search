@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "discord.js": "^13.15.1",
+    "node-fetch": "^2.6.9",
+  }
+}
